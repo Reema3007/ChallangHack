@@ -1,0 +1,98 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+  height: 50%;
+  /* position: absolute;
+  top: 60px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 56px;
+
+  /* padding: 0px 24px 0px 24px; */
+  background-color: #0f66a3;
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu > img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.header {
+  font-size: 24px;
+}
+.report-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  height: 100%;
+
+  padding: 0px 24px;
+  background-color: #000000;
+  /* color: #000000; */
+}
+
+#favDialog {
+  width: 50%;
+  padding: 40px;
+  /* text-align: center; */
+}
+
+.form-header {
+  font-size: 20px;
+  text-align: center;
+}
+
+.default {
+  color: darkgrey;
+}
+
+.btn-container {
+  text-align: center;
+}
+.possible-solution {
+  display: none;
+}
+
+.recent-reports {
+  padding: 24px 0px;
+}
+.recent-report-title {
+  font-size: 24px;
+  padding: 16px 24px;
+
+  /* border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000; */
+  background-color: #cee8fa;
+}
+
+.report-type {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.report {
+  margin: 16px 0;
+  padding-bottom: 8px;
+  padding: 0px 24px 8px;
+  border-bottom: 1px solid darkgray;
+}

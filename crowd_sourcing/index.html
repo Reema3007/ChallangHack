@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Crowd sourcing</title>
+
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="menu"><img src="hamburger-menu.svg" alt="menu" /> Menu</div>
+      <div class="header">Reporting System</div>
+      <div class="report-btn">Report</div>
+    </div>
+    <div id="container"></div>
+
+    <div class="recent-reports">
+      <div class="recent-report-title">Recent Reports</div>
+
+      <div class="report">
+        <div class="report-type">Credit Card Fraud</div>
+        <div class="report-details">
+          Hi, Today I have faced a very unfortunate accident. When I was going
+          to bank, an old women approached me asking for some water to drink and
+          started to collapse. When I reached to fetch my bottle.
+          <a href=".">....more</a>
+        </div>
+      </div>
+      <div class="report">
+        <div class="report-type">Online Transaction Fraud</div>
+        <div class="report-details">
+          Hello, Today I was enjoying my weekend and out of no where I got a
+          call asking about credit card details saying that my card is
+          deactivated(but it is not) and if not provided they were threatening
+          me<a href=".">...more</a>
+        </div>
+      </div>
+      <div class="report">
+        <div class="report-type">Online Transaction Fraud</div>
+
+        <div class="report-details">
+          Today I got a call from fraudster saying that I have to increase my
+          credit limit and this is what happened<a href=".">.....more</a>
+        </div>
+      </div>
+    </div>
+
+    <dialog id="favDialog">
+      <form method="dialog">
+        <div class="form-header">Report the Fraud</div>
+        <hr />
+
+        <div class="fraud-type">
+          <label
+            >Type of fraud:
+            <select id="select-mode">
+              <option value="default" class="default">Select fraud type</option>
+              <option value="1">Credit Card</option>
+              <option value="2">Online Transaction</option>
+            </select>
+          </label>
+        </div>
+        <br />
+        <div class="place">
+          <label
+            >Place:
+            <select id="select-city">
+              <option value="default" class="default">Select City</option>
+              <option value="1">Mumbai</option>
+              <option value="2">Pune</option>
+              <option value="3">Delhi</option>
+              <option value="4">Banglore</option>
+            </select>
+          </label>
+        </div>
+        <br />
+        <div class="fraud-details">
+          <label>Detailed Issue:</label><br />
+          <textarea type="text" id="issue-description"> </textarea>
+        </div>
+        <br />
+        <div id="issue-resolved">
+          <input
+            type="checkbox"
+            id="resolved"
+            name="issueStatus"
+            value="Bike"
+          />
+          <label for="issueStatus">Resolved</label>
+        </div>
+        <br />
+
+        <div class="possible-solution">
+          <label>How did you solved the issue?</label><br />
+          <textarea type="text" id="issue-solution"></textarea>
+        </div>
+        <br />
+
+        <div class="btn-container">
+          <button value="cancel">Cancel</button>
+          <button id="confirmBtn" value="default">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="word-cloud.js"></script>
+  </body>
+</html>
